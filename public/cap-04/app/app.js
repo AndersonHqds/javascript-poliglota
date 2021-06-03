@@ -31,4 +31,4 @@ const getNotaFromId = (id) => {
 
 const getNotaFromIdM = memoizer(getNotaFromId);
 
-getNotaFromIdM(1).then(getNotaFromIdM.release()).then(getNotaFromIdM(1));
+getNotaFromIdM(1).then(getNotaFromIdM(1));
